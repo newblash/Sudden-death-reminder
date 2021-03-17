@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "防猝死提醒", "久坐提醒器\防猝死提醒.csproj", "{B9E0F7E6-1B80-4DFC-BA11-80F3D0C58316}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9E0F7E6-1B80-4DFC-BA11-80F3D0C58316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E0F7E6-1B80-4DFC-BA11-80F3D0C58316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E0F7E6-1B80-4DFC-BA11-80F3D0C58316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E0F7E6-1B80-4DFC-BA11-80F3D0C58316}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1751878-F68B-45FF-AAC7-74149B5F3E35}
+	EndGlobalSection
+EndGlobal

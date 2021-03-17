@@ -1,0 +1,9 @@
+G:\杨晶文件\E盘\插件\久坐提醒器\久坐提醒器\bin\Debug\久坐提醒器.exe
+G:\杨晶文件\E盘\插件\久坐提醒器\久坐提醒器\bin\Debug\久坐提醒器.pdb
+G:\杨晶文件\E盘\插件\久坐提醒器\久坐提醒器\obj\Debug\久坐提醒器.Form1.resources
+G:\杨晶文件\E盘\插件\久坐提醒器\久坐提醒器\obj\Debug\久坐提醒器.Properties.Resources.resources
+G:\杨晶文件\E盘\插件\久坐提醒器\久坐提醒器\obj\Debug\久坐提醒器.csproj.GenerateResource.cache
+G:\杨晶文件\E盘\插件\久坐提醒器\久坐提醒器\obj\Debug\久坐提醒器.csproj.CoreCompileInputs.cache
+G:\杨晶文件\E盘\插件\久坐提醒器\久坐提醒器\obj\Debug\久坐提醒器.exe
+G:\杨晶文件\E盘\插件\久坐提醒器\久坐提醒器\obj\Debug\久坐提醒器.pdb
+G:\杨晶文件\E盘\插件\久坐提醒器\久坐提醒器\obj\Debug\久坐提醒器.csprojAssemblyReference.cache
