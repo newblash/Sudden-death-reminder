@@ -118,10 +118,23 @@ namespace 防猝死提醒器
                     break;
             }
             Info.时间变化++;
-            notifyIcon1.Text = "休息提醒\r\n距离暴毙还剩:" + ((Info.工作时间 - 1 - Info.时间变化) / 60).ToString("N0") + "分" + (Info.工作时间 - Info.时间变化) % 60 + "秒";
+            //测试
+            //Console.WriteLine("测试还剩:" + Math.Truncate((Info.工作时间 - Info.时间变化) / 60).ToString() + "分" + (Info.工作时间 - Info.时间变化) % 60 + "秒");
+
+            if (Math.Truncate((Info.工作时间 - Info.时间变化) / 60) > 0)
+            {
+                notifyIcon1.Text = "休息提醒\r\n距离暴毙还剩:" + Math.Truncate((Info.工作时间 - Info.时间变化) / 60).ToString() + "分" + (Info.工作时间 - Info.时间变化) % 60 + "秒";
+                Console.WriteLine("还剩:" + Math.Truncate((Info.工作时间 - Info.时间变化) / 60).ToString() + "分" + (Info.工作时间 - Info.时间变化) % 60 + "秒");
+            }
+            else
+            {
+                notifyIcon1.Text = "休息提醒\r\n距离暴毙还剩:"  + (Info.工作时间 - Info.时间变化) % 60 + "秒";
+                Console.WriteLine("还剩:"  + (Info.工作时间 - Info.时间变化) % 60 + "秒");
+            }
+
 
             if ((double.Parse(DateTime.Now.ToString("HHmmss")) > Info.上午上班时间 && double.Parse(DateTime.Now.ToString("HHmmss")) < Info.上午下班时间) ||
-                (double.Parse(DateTime.Now.ToString("HHmmss")) > Info.下午上班时间 && double.Parse(DateTime.Now.ToString("HHmmss")) < Info.下午下班时间))
+            (double.Parse(DateTime.Now.ToString("HHmmss")) > Info.下午上班时间 && double.Parse(DateTime.Now.ToString("HHmmss")) < Info.下午下班时间))
             {
                 //工作时间内才执行气泡弹窗,其他时间统一锁死操作界面
                 if (Info.时间变化 < Info.工作时间 && Info.时间变化 % Info.提醒间隔 == 0)
@@ -134,7 +147,14 @@ namespace 防猝死提醒器
                         }
                         else
                         {
-                            notifyIcon1.ShowBalloonTip(1, "休息提醒", "距离暴毙还剩:" + ((Info.工作时间 - Info.时间变化) / 60).ToString("N0") + "分" + (Info.工作时间 - Info.时间变化) % 60 + "秒", ToolTipIcon.Error);
+                            if (Math.Truncate((Info.工作时间 - Info.时间变化) / 60) > 0)
+                            {
+                                notifyIcon1.ShowBalloonTip(1, "休息提醒", "距离暴毙还剩:" + Math.Truncate((Info.工作时间 - Info.时间变化) / 60).ToString() + "分" + (Info.工作时间 - Info.时间变化) % 60 + "秒", ToolTipIcon.Error);
+                            }
+                            else
+                            {
+                                notifyIcon1.ShowBalloonTip(1, "休息提醒", "距离暴毙还剩:" + (Info.工作时间 - Info.时间变化) % 60 + "秒", ToolTipIcon.Error);
+                            }
                         }
                     }));
                 }
@@ -169,7 +189,7 @@ namespace 防猝死提醒器
 
 
             }
-            Console.WriteLine(Info.时间变化);
+            //Console.WriteLine(Info.时间变化);
 
         }
         /// <summary>

@@ -16,6 +16,5 @@ G:\杨晶文件\E盘\插件\久坐提醒器(素版)\久坐提醒器\obj\Debug\�
 G:\杨晶文件\E盘\插件\久坐提醒器(素版)\久坐提醒器\obj\Debug\防猝死提醒.csproj.CoreCompileInputs.cache
 G:\杨晶文件\E盘\插件\久坐提醒器(素版)\久坐提醒器\obj\Debug\防猝死提醒器.exe
 G:\杨晶文件\E盘\插件\久坐提醒器(素版)\久坐提醒器\obj\Debug\防猝死提醒器.pdb
-G:\杨晶文件\E盘\插件\久坐提醒器(素版)\久坐提醒器\obj\Debug\防猝死提醒.csprojAssemblyReference.cache
 G:\杨晶文件\E盘\插件\久坐提醒器(素版)\久坐提醒器\obj\Debug\防猝死提醒器.设置页面.resources
 G:\杨晶文件\E盘\插件\久坐提醒器(素版)\久坐提醒器\obj\Debug\防猝死提醒器.锁定页面.resources
